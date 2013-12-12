@@ -4,4 +4,3 @@ language:
 script:
   - ./build/go/script
   - ./build/js/script
-script
