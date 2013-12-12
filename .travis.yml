@@ -1,1 +1,7 @@
-language: node_js
+language: 
+  - go
+  - node_js
+script:
+  - ./build/go/script
+  - ./build/js/script
+script
