@@ -2,4 +2,6 @@
 
 echo "Building Go!"
 
+go test -v ./src/...
+
 exit 0
