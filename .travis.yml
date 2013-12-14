@@ -1,4 +1,4 @@
-language: 
+language:
   - go
   - node_js
 script:

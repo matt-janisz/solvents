@@ -2,7 +2,8 @@
 
 echo "Building Go!"
 
-# Copy all go files into src so that we can go test them.
+# All go files must be in the src/ subdirectory:
+#  http://golang.org/doc/code.html#Organization
 rsync -a --include='*.go' --exclude='src/' --include='*/' --exclude='*' -v --prune-empty-dirs . src
 
 go test -v ./src/...

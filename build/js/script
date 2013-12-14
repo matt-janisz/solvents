@@ -2,4 +2,6 @@
 
 echo "Building JS"
 
+# TODO(b0ri5): Run the js tests.
+
 exit 0
