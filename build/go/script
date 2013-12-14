@@ -2,6 +2,9 @@
 
 echo "Building Go!"
 
+# Copy all go files into src so that we can go test them.
+rsync -a --include='*.go' --exclude='src/' --include='*/' --exclude='*' -v --prune-empty-dirs . src
+
 go test -v ./src/...
 
 exit 0
