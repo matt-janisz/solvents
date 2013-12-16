@@ -1,9 +1,9 @@
 {
   "name": "solvents",
   "devDependencies": {
-    "mocha": "git://github.com/visionmedia/mocha.git"
+    "mocha": ">=1.15.1"
   },
   "scripts": {
-    "test": "echo $PWD && ./node_modules/.bin/mocha $(find . -name '*_mochatest.js')"
+    "test": "echo $PWD && cd ../.. && ./node_modules/.bin/mocha $(find . -name '*_mochatest.js')"
   }
 }
