@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -o xtrace
+
 echo "Building Go!"
 
 # All go files must be in the src/ subdirectory:

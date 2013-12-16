@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+set -o xtrace
+
 echo "Building JS"
 
-# TODO(b0ri5): Run the js tests.
+npm link build/js
+npm test solvents
 
 exit 0

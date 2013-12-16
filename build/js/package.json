@@ -1,0 +1,10 @@
+{
+  "name": "solvents",
+  "devDependencies": {
+    "mocha": "git://github.com/visionmedia/mocha.git"
+  },
+  "scripts": {
+    # This lives in build/js so we need to go back two dirs
+    "test": "cd ../.. && ./node_modules/.bin/mocha $(find . -name '*_mochatest.js')"
+  }
+}
