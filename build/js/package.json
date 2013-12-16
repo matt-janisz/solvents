@@ -4,6 +4,6 @@
     "mocha": "git://github.com/visionmedia/mocha.git"
   },
   "scripts": {
-    "test": "cd ../.. && ./node_modules/.bin/mocha $(find . -name '*_mochatest.js')"
+    "test": "echo $PWD && ./node_modules/.bin/mocha $(find . -name '*_mochatest.js')"
   }
 }
