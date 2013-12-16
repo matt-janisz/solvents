@@ -4,6 +4,6 @@
     "mocha": ">=1.15.1"
   },
   "scripts": {
-    "test": "echo $PWD && npm config list && cd ../.. && mocha $(find . -name '*_mochatest.js')"
+    "test": "cd ../.. && mocha $(find . -name '*_mochatest.js')"
   }
 }
