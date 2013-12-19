@@ -1,6 +1,8 @@
 language:
   - go
+  - java
   - node_js
 script:
   - ./build/go/script
+  - ./build/java/script
   - ./build/js/script

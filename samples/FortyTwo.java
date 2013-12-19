@@ -1,4 +1,6 @@
-public class FortyTwo {
+package samples;
+
+class FortyTwo {
   int fortyTwo() {
     return 42;
   }

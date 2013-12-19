@@ -1,0 +1,29 @@
+apply plugin: 'java'
+
+// Modify the default paths gradle of:
+//   src/main/java
+//   src/main/test
+// to just examine the current directory.
+sourceSets {
+  main {
+    java {
+      srcDir '.'
+    }
+  }
+  test {
+    java {
+      srcDir '.'
+    }
+  }
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  // TODO(b0ri5): There might be a way to not require junit in the compile time deps
+  // if we can modify sourceSets to only look at *Test.java files for tests.
+  compile group: 'junit', name: 'junit', version: '4.+'
+  testCompile group: 'junit', name: 'junit', version: '4.+'
+}

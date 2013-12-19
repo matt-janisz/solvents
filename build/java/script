@@ -1,0 +1,5 @@
+set -e # Exit on error
+set -o xtrace # Trace commands
+
+# The --info flag is necessary for verbose test failures.
+gradle --build-file build/java/build.gradle check --info
