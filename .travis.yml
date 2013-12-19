@@ -2,7 +2,11 @@ language:
   - go
   - java
   - node_js
+  - python
+python:
+  - "3.2"
 script:
   - ./build/go/script
   - ./build/java/script
   - ./build/js/script
+  - ./build/py/script

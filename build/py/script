@@ -1,5 +1,22 @@
 set -e # Exit on error
-set -o xtrace # Trace commands
+
+function find_module_dirs() {
+  for dir in $(find . -type d)
+  do
+    if [[ ${dir} == \.\/\.* ]] ||
+       [[ ${dir} == \.\/build* ]] ||
+       [[ ${dir} == *__pycache__* ]]
+    then
+      continue
+    fi
+    echo ${dir}
+  done
+}
+
+for dir in $(find_module_dirs)
+do
+  touch ${dir}/__init__.py
+done
 
 # TODO(b0ri5): Add a before_install to populate dirs with __init__.py
 nosetests
