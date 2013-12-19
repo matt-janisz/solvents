@@ -1,4 +1,4 @@
 set -e # Exit on error
 set -o xtrace # Trace commands
 
-gradle --build-file build/java/build.gradle check
+gradle --build-file build/java/build.gradle check --info
