@@ -1,0 +1,5 @@
+set -e # Exit on error
+set -o xtrace # Trace commands
+
+# TODO(b0ri5): Add a before_install to populate dirs with __init__.py
+nosetests
