@@ -9,7 +9,7 @@ install:
   # Although the use of pip instead of apt-get was recommended, it didn't work.
   - sudo apt-get install python3-nose
 script:
-  - ./build/go/script
-  - ./build/java/script
-  - ./build/js/script
-  - ./build/py/script
+  - ./lang/go/script
+  - ./lang/java/script
+  - ./lang/js/script
+  - ./lang/py/script
