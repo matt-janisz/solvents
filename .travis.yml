@@ -3,6 +3,8 @@ language:
   - java
   - node_js
   - python
+python:
+  - "3.3"
 script:
   - ./build/go/script
   - ./build/java/script
