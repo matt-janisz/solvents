@@ -1,0 +1,12 @@
+# Ignore the empty __init__.py files created for nosetests
+*__init__.py
+
+# https://github.com/github/gitignore/blob/master/Gradle.gitignore
+.gradle
+build/
+
+# https://github.com/github/gitignore/blob/master/Python.gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+

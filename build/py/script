@@ -1,0 +1,21 @@
+set -e # Exit on error
+
+function find_module_dirs() {
+  for dir in $(find . -type d)
+  do
+    if [[ ${dir} == \.\/\.* ]] ||
+       [[ ${dir} == \.\/build* ]] ||
+       [[ ${dir} == *__pycache__* ]]
+    then
+      continue
+    fi
+    echo ${dir}
+  done
+}
+
+for dir in $(find_module_dirs)
+do
+  touch ${dir}/__init__.py
+done
+
+nosetests3
