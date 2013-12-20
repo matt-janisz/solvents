@@ -3,14 +3,8 @@ language:
   - java
   - node_js
   - python
-python:
-  - "3.3"
-install:
 script:
-#  - ./build/go/script
-#  - ./build/java/script
-#  - ./build/js/script
-  - python --version
-  - which python
-  - sudo pip install nose
+  - ./build/go/script
+  - ./build/java/script
+  - ./build/js/script
   - ./build/py/script

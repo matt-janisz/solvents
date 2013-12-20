@@ -18,5 +18,4 @@ do
   touch ${dir}/__init__.py
 done
 
-# TODO(b0ri5): Add a before_install to populate dirs with __init__.py
 nosetests
