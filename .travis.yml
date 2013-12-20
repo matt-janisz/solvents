@@ -5,6 +5,8 @@ language:
   - python
 python:
   - "3.2"
+install:
+  - pip install nose
 script:
   - ./build/go/script
   - ./build/java/script
