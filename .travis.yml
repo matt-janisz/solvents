@@ -4,7 +4,7 @@ language:
   - node_js
   - python
 python:
-  - "3.2"
+  - "3.3"
 install:
   - pip install nose
 script:
