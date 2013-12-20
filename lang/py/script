@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 set -e # Exit on error
 
 function find_module_dirs() {
@@ -5,6 +7,8 @@ function find_module_dirs() {
   do
     if [[ ${dir} == \.\/\.* ]] ||
        [[ ${dir} == \.\/build* ]] ||
+       [[ ${dir} == \.\/lang* ]] ||
+       [[ ${dir} == \.\/src* ]] ||
        [[ ${dir} == *__pycache__* ]]
     then
       continue
