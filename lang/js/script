@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
-set -o xtrace
+set -e # Exit on error
+set -o xtrace # Trace commands
 
-echo "Building JS"
-
-npm link build/js
+npm link lang/js
 npm test solvents
-
-exit 0
