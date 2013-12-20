@@ -6,6 +6,7 @@ language:
 python:
   - "3.3"
 install:
+  # Although the use of pip instead of apt-get was recommended, it didn't work.
   - sudo apt-get install python3-nose
 script:
   - ./build/go/script

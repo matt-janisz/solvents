@@ -18,14 +18,4 @@ do
   touch ${dir}/__init__.py
 done
 
-if ! which nosetests
-then
-  echo "nosetests" not found
-fi
-
-if ! which nosetests3
-then
-  echo "nosetests3" not found
-fi
-
 nosetests3
