@@ -6,10 +6,11 @@ language:
 python:
   - "3.3"
 install:
-  - pip install nose
 script:
 #  - ./build/go/script
 #  - ./build/java/script
 #  - ./build/js/script
-#  - ./build/py/script
-  - nosetests
+  - python --version
+  - which python
+  - sudo pip install nose
+  - ./build/py/script
