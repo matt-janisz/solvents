@@ -7,6 +7,6 @@ unzip -o -q gtest-1.7.0.zip
 cd gtest-1.7.0
 cmake \
   -DCMAKE_CXX_COMPILER="clang++" \
-  -DCMAKE_CXX_FLAGS="-Werror -Weverything -Wno-undef -std=c++11" \
+  -DCMAKE_CXX_FLAGS="-std=c++11" \
   .
 cmake --build .
