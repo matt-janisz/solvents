@@ -3,7 +3,7 @@
 import collections
 import os
 
-print('.PHONY: all')
+print('.PHONY: all clean test')
 print()
 
 targets = []
