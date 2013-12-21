@@ -1,14 +1,17 @@
 language:
+  - cpp
   - go
   - java
   - node_js
   - python
-python:
-  - "3.3"
+compiler: clang
+python: "3.3"
 install:
-  # Although the use of pip instead of apt-get was recommended, it didn't work.
+  # Although the use of pip instead of apt-get is recommended, it doesn't work.
   - sudo apt-get install python3-nose
+  - ./lang/cc/install
 script:
+  - ./lang/cc/script
   - ./lang/go/script
   - ./lang/java/script
   - ./lang/js/script

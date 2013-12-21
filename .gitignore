@@ -1,6 +1,14 @@
 # Ignore the empty __init__.py files created for nosetests
 *__init__.py
 
+# Ignore everything in third_party
+third_party/
+
+# Ignore cc generated tests, object files, and makefile
+*_test
+*.o
+lang/cc/Makefile
+
 # https://github.com/github/gitignore/blob/master/Gradle.gitignore
 .gradle
 build/
