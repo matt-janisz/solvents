@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -x # Exit on error
+
+go tool vet -v .
+# Display the diff and simplify the code
+gofmt -d -s .
