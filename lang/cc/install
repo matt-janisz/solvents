@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Install gtest
 mkdir -p third_party
 cd third_party
 wget https://googletest.googlecode.com/files/gtest-1.7.0.zip
@@ -10,3 +11,6 @@ cmake \
   -DCMAKE_CXX_FLAGS="-std=c++11" \
   .
 cmake --build .
+
+# Install clang-format
+sudo apt-get install clang-format
