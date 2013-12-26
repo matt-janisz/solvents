@@ -3,7 +3,5 @@
 set -e # Exit on error
 set -o xtrace # Trace commands
 
-gjslint -r .
-
 npm link lang/js
 npm test solvents
