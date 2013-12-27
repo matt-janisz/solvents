@@ -2,9 +2,11 @@
 
 set -e # Exit on error
 
-# See http://godoc.org/code.google.com/p/go.tools/cmd/vet:w
+# See http://godoc.org/code.google.com/p/go.tools/cmd/vet
+# Exits with code 1 on error
 go tool vet -v .
 
+# gofmt always exits with 0
 DIFF=$(gofmt -d -s .)
 if [[ ${DIFF} ]]; then
   echo "${DIFF}"
