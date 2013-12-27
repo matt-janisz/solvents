@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+set -o xtrace
 set -e # Exit on error
 
-gjslint --strict --nojsdoc -r .
+gjslint --strict --nojsdoc --exclude_directories build --recurse .

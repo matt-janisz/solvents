@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-fixjsstyle -r .
+set -o xtrace
+
+fixjsstyle --exclude_directories build --recurse .

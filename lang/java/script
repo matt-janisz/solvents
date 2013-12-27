@@ -3,5 +3,8 @@
 set -e # Exit on error
 set -o xtrace # Trace commands
 
-# The --info flag is necessary for verbose test failures.
-gradle --build-file lang/java/build.gradle check --info
+# The --build-file flag doesn't keep the same project root.
+# So we need to copy the build file to the solvents root.
+cp lang/java/build.gradle .
+
+gradle check --info

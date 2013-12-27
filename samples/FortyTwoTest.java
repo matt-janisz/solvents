@@ -11,6 +11,6 @@ public class FortyTwoTest {
 
   @Test
   public void testFortyTwo() {
-    assertThat(fortyTwo.fortyTwo(), equalTo(41));
+    assertThat(fortyTwo.fortyTwo(), equalTo(42));
   }
 }
