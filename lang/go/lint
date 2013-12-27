@@ -2,6 +2,11 @@
 
 set -e # Exit on error
 
+# See http://godoc.org/code.google.com/p/go.tools/cmd/vet:w
 go tool vet -v .
-# Display the diff and simplify the code
-gofmt -d -s .
+
+DIFF=$(gofmt -d -s .)
+if [[ ${DIFF} ]]; then
+  echo "${DIFF}"
+  exit 1
+fi
