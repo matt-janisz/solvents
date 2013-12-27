@@ -13,4 +13,5 @@ cmake \
 cmake --build .
 
 # Install clang-format
-sudo apt-get install clang-format
+which clang-format
+which clang-modernize
