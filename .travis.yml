@@ -13,7 +13,7 @@ install:
   - ./lang/js/install
 script:
   - ./lang/cc/script
-  - ./lang/go/script
+  - ./lang/go/lint && ./lang/go/script
   - ./lang/java/script
   - ./lang/js/lint && ./lang/js/script
   - ./lang/py/script
