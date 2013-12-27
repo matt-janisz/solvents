@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -x # Exit on error
+set -e # Exit on error
 
 go tool vet -v .
 # Display the diff and simplify the code
