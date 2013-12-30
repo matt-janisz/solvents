@@ -22,4 +22,4 @@ do
   touch ${dir}/__init__.py
 done
 
-nosetests3
+nosetests
