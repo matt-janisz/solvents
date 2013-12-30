@@ -10,4 +10,4 @@ script:
   - ./lang/go/lint && ./lang/go/script
   - ./lang/java/script
   - ./lang/js/lint && ./lang/js/script
-  - ./lang/py/script
+  - bash lang/py/lint && ./lang/py/script
