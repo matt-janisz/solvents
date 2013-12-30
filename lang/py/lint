@@ -3,5 +3,5 @@
 set -e # Exit on error
 set -o xtrace
 
-find . -name '*.py'
-find . -name '*.py' | xargs pylint
+find . -name '*.py' -path ./third_party -prune -o
+find . -name '*.py' -path ./third_party -prune -o | xargs pylint
