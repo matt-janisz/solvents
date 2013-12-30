@@ -5,9 +5,13 @@ install:
   - ./lang/cc/install
   - ./lang/js/install
   - bash lang/py/install
+before_script:
+  - ./lang/go/lint
+  - ./lang/js/lint
+  - bash lang/py/lint
 script:
   - ./lang/cc/script
-  - ./lang/go/lint && ./lang/go/script
+  - ./lang/go/script
   - ./lang/java/script
-  - ./lang/js/lint && ./lang/js/script
-  - bash lang/py/lint && ./lang/py/script
+  - ./lang/js/script
+  - ./lang/py/script
