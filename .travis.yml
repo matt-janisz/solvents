@@ -9,6 +9,7 @@ python: "3.3"
 before_install:
   # TODO(b0ri5): Make executable and don't call bash explicitly.
   - bash lang/py/before_install
+  - sudo apt-get update
 install:
   - ./lang/cc/install
   - ./lang/js/install
