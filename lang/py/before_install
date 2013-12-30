@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -e # Exit on error
+
+# Makes python3.3 available using the same ppa that travis uses.
+sudo add-apt-repository -y ppa:fkrull/deadsnakes
