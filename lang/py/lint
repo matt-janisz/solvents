@@ -3,6 +3,5 @@
 set -e # Exit on error
 set -o xtrace
 
-pylint --help
-pylint --full-documentation
+find . -name '*.py'
 find . -name '*.py' | xargs pylint
