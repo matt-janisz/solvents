@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -e # Exit on error
+
+find . -name '*.py' | xargs pylint
