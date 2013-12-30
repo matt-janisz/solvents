@@ -8,4 +8,7 @@ virtualenv --version
 virtualenv --python=python3.3 ~/virtualenv/python3.3
 source ~/virtualenv/python3.3/bin/activate
 python --version
-pip install -r lang/py/requirements.txt
+pip install nose
+nosetests --version
+pip install pylint
+pylint --version
