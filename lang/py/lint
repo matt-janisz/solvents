@@ -3,7 +3,6 @@
 set -e # Exit on error
 set -o xtrace
 
-pylint --long-help
 find . -name '*.py' -not -path './third_party/*' | xargs \
   pylint \
     --reports n \
