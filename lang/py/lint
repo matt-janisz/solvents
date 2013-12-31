@@ -4,6 +4,8 @@ set -e # Exit on error
 set -o xtrace
 
 find . -name '*.py' -not -path './third_party/*' | xargs \
-  pylint --include-ids y --symbols y \
+  pylint \
+    --symbols y \
+    --reports n \
     --indent-string='  ' \
     --disable=missing-docstring
