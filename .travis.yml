@@ -4,11 +4,11 @@ python: "3.3"
 install:
   - ./lang/cc/install
   - ./lang/js/install
-  - bash lang/py/install
+  - ./lang/py/install
 before_script:
   - ./lang/go/lint
   - ./lang/js/lint
-  - bash lang/py/lint
+  - ./lang/py/lint
 script:
   - ./lang/cc/script
   - ./lang/go/script

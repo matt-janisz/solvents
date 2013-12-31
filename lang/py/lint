@@ -3,5 +3,7 @@
 set -e # Exit on error
 set -o xtrace
 
-find . -name '*.py' -not -path './third_party/*'
-find . -name '*.py' -not -path './third_party/*' | xargs pylint
+find . -name '*.py' -not -path './third_party/*' | xargs \
+  pylint --include-ids y --symbols y \
+    --indent-string='  ' \
+    --disable=missing-docstring
