@@ -22,5 +22,4 @@ do
   touch ${dir}/__init__.py
 done
 
-python --version
 nosetests
