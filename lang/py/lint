@@ -7,4 +7,5 @@ find . -name '*.py' -not -path './third_party/*' | xargs \
   pylint \
     --reports n \
     --indent-string='  ' \
-    --disable=missing-docstring
+    --disable=missing-docstring \
+    --disable=too-many-public-methods
