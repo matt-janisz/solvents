@@ -1,19 +1,17 @@
-language:
-  - cpp
-  - go
-  - java
-  - node_js
-  - python
-compiler: clang
+# Make python the default language because it is the weirdest to set up
+language: python
 python: "3.3"
 install:
-  # Although the use of pip instead of apt-get is recommended, it doesn't work.
-  - sudo apt-get install python3-nose
   - ./lang/cc/install
   - ./lang/js/install
+  - ./lang/py/install
+before_script:
+  - ./lang/go/lint
+  - ./lang/js/lint
+  - ./lang/py/lint
 script:
   - ./lang/cc/script
-  - ./lang/go/lint && ./lang/go/script
+  - ./lang/go/script
   - ./lang/java/script
-  - ./lang/js/lint && ./lang/js/script
+  - ./lang/js/script
   - ./lang/py/script
