@@ -1,5 +1,3 @@
 #include "fortytwo.h"
 
-int fortytwo() {
-  return 42;
-}
+int fortytwo() { return 42; }

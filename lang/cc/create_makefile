@@ -43,10 +43,10 @@ for root, dirs, files in os.walk('.'):
                'gtest_libpath': gtest_libpath}
     
     print('{binary_path}: {header_path} {code_path} {test_path}'.format(**fmtdict))
-    print('\tclang++ {code_path} -o {obj_path} -c \\'.format(**fmtdict))
+    print('\t${{CXX}} {code_path} -o {obj_path} -c \\'.format(**fmtdict))
     print('\t        -Werror -Weverything -std=c++11 \\')
     print('\t        -fsanitize=address -fsanitize=undefined')
-    print('\tclang++ {test_path} {obj_path} -o {binary_path} \\'.format(**fmtdict))
+    print('\t${{CXX}} {test_path} {obj_path} -o {binary_path} \\'.format(**fmtdict))
     print('\t        -isystem {gtest_includepath} -L {gtest_libpath} -lgtest -lgtest_main -pthread \\'.format(**fmtdict))
     print('\t        -Werror -Weverything -Wno-global-constructors -std=c++11 \\')
     print('\t        -fsanitize=address -fsanitize=undefined')
