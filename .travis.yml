@@ -6,6 +6,9 @@ language:
   - python
 compiler: clang
 python: "3.3"
+before_install:
+  - ./lang/cc/before_install
+  - sudo apt-get update
 install:
   # Although the use of pip instead of apt-get is recommended, it doesn't work.
   - sudo apt-get install python3-nose
