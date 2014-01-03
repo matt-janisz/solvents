@@ -10,6 +10,7 @@ install:
   - ./lang/js/install
   - ./lang/py/install
 before_script:
+  - ./lang/cc/lint
   - ./lang/go/lint
   - ./lang/js/lint
   - ./lang/py/lint
