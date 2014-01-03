@@ -7,5 +7,6 @@ for file in $(find . \
     -name '*.h' -not -path './third_party/*' && \
     find . -name '*.cc' -not -path './third_party/*')
 do
-  clang-format-3.5 -i --style=Google {file}
+  echo "Running clang-format on ${file}"
+  clang-format-3.5 -i --style=Google ${file}
 done
