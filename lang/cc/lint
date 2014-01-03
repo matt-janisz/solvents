@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 set -e # Exit on error
-set -o xtrace
 
 EXIT_CODE=0
 # TODO(b0ri5): Make a common script for finding relevant files.
@@ -10,7 +9,7 @@ for file in $(find . \
     find . -name '*.cc' -not -path './third_party/*')
 do
   echo "Diffing ${file} with clang-format"
-  DIFF=$(clang-format-3.5 --style=Google ${file} | diff - ${file})
+  DIFF=$(clang-format-3.5 --style=Google ${file} | diff ${file} -)
   if [[ ${DIFF} ]]; then
     echo "${DIFF}"
     EXIT_CODE=1
