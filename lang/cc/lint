@@ -4,7 +4,10 @@ set -e # Exit on error
 set -o xtrace
 
 EXIT_CODE=0
-for file in $(find . -name '*.cc' -or -name '*.h' -not -path './third_party/*')
+# TODO(b0ri5): Make a common script for finding relevant files.
+for file in $(find . \
+    -name '*.h' -not -path './third_party/*' && \
+    find . -name '*.cc' -not -path './third_party/*')
 do
   echo "Diffing ${file} with clang-format"
   DIFF=$(clang-format-3.5 --style=Google ${file} | diff - ${file})
