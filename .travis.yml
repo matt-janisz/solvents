@@ -7,6 +7,7 @@ before_install:
   - sudo apt-get update
 install:
   - ./lang/cc/install
+  - clang-modernize-3.5 a.cc; clang-modernize-3.5 a.cpp
   - ./lang/js/install
   - ./lang/py/install
 before_script:
