@@ -1,9 +1,10 @@
 {
   "name": "solvents",
+  "version": "0.1.0",
   "devDependencies": {
     "mocha": ">=1.15.1"
   },
   "scripts": {
-    "test": "cd ../.. && mocha $(find . -name '*_mochatest.js')"
+    "test": "cd ../.. && mocha $(find . -name '*_test.js')"
   }
 }
