@@ -1,5 +1,5 @@
 var assert = require('assert');
-var multiples_of_3_and_5_brute_force =
+var sum_multiples_of_3_and_5_brute_force =
     require('./multiples_of_3_and_5').sum_multiples_of_3_and_5_brute_force;
 
 describe('multiples_of_3_and_5', function() {
