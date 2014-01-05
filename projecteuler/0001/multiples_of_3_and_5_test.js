@@ -3,7 +3,7 @@ var sum_multiples_of_3_and_5_brute_force =
     require('./multiples_of_3_and_5').sum_multiples_of_3_and_5_brute_force;
 
 describe('multiples_of_3_and_5', function() {
-  describe('#multiples_of_3_and_5_brute_force()', function() {
+  describe('#sum_multiples_of_3_and_5_brute_force()', function() {
     it('should be exclusive', function() {
       assert.equal(0, sum_multiples_of_3_and_5_brute_force(3));
       assert.equal(3, sum_multiples_of_3_and_5_brute_force(4));
