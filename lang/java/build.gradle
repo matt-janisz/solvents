@@ -1,3 +1,4 @@
+apply plugin: 'checkstyle'
 // See https://github.com/tbroyer/gradle-errorprone-plugin
 apply plugin: 'errorprone'
 apply plugin: 'java'
@@ -17,6 +18,14 @@ sourceSets {
       srcDir '.'
     }
   }
+}
+
+checkstyleMain {
+  configFile = file('./lang/java/sun_checks.xml')
+}
+ 
+checkstyleTest {
+  configFile = file('./lang/java/sun_checks.xml')
 }
 
 repositories {
