@@ -1,6 +1,5 @@
 package samples;
 
-// TODO(b0ri5): Enforce import ordering
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 

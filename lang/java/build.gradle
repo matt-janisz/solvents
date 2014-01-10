@@ -21,11 +21,11 @@ sourceSets {
 }
 
 checkstyleMain {
-  configFile = file('./lang/java/sun_checks.xml')
+  configFile = file('./lang/java/checkstyle.xml')
 }
  
 checkstyleTest {
-  configFile = file('./lang/java/sun_checks.xml')
+  configFile = file('./lang/java/checkstyle.xml')
 }
 
 repositories {
