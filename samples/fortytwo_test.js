@@ -1,5 +1,5 @@
-var assert = require('assert');
-var fortytwo = require('./fortytwo');
+const assert = require('assert');
+const fortytwo = require('./fortytwo');
 
 describe('fortytwo', function() {
   describe('#fortytwo()', function() {
