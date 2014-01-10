@@ -1,5 +1,5 @@
-var assert = require('assert');
-var multiples_of_3_or_5 = require('./multiples_of_3_or_5');
+const assert = require('assert');
+const multiples_of_3_or_5 = require('./multiples_of_3_or_5');
 
 describe('multiples_of_3_or_5', function() {
   describe('#brute_force()', function() {
