@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+wget https://raw.github.com/checkstyle/checkstyle/master/contrib/examples/conf/BlochEffectiveJava.xml -O lang/java/BlochEffectiveJava.xml
+wget https://raw.github.com/checkstyle/checkstyle/master/sun_checks.xml -O lang/java/sun_checks.xml
