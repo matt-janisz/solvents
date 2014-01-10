@@ -3,4 +3,10 @@
 set -o xtrace
 set -e # Exit on error
 
-gjslint --strict --nojsdoc --exclude_directories build --recurse .
+gjslint --strict \
+  --nojsdoc \
+  --exclude_directories \
+build,\
+lang/js/node_modules,\
+node_modules \
+  --recurse .
