@@ -1,3 +1,5 @@
+'use strict';
+
 const assert = require('assert');
 const multiples_of_3_or_5 = require('./multiples_of_3_or_5');
 
