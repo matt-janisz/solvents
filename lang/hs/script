@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e # Exit on error
+set -o xtrace
+
+lang/hs/copy_source
+ghc -ilang/hs/src \
+  lang/hs/src/Samples/FortyTwoTest.hs \
+  -o lang/hs/src/Samples/FortyTwoTest
+lang/hs/src/Samples/FortyTwoTest

@@ -19,3 +19,5 @@ build.gradle
 __pycache__/
 *.py[cod]
 
+# Ignore haskell capitalized source dirs
+lang/hs/src
