@@ -3,4 +3,5 @@
 set -e # Exit on error
 set -o xtrace
 
+sudo apt-get install haskell-platform
 cabal install --only-dependencies --enable-tests
