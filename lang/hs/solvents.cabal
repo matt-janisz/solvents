@@ -1,9 +1,5 @@
 name:             solvents
 version:          0.1.0
-license:          MIT
-license-file:     LICENSE
-author:           Simon Hengel <sol@typeful.net>
-maintainer:       Simon Hengel <sol@typeful.net>
 build-type:       Simple
 cabal-version:    >= 1.8
 
@@ -12,8 +8,6 @@ library
       -Wall -Werror
   hs-source-dirs:
       lang/hs/src
---  exposed-modules:
---      Data.String.Strip
   build-depends:
       base    == 4.*
 
