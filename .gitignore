@@ -22,6 +22,8 @@ __pycache__/
 # Ignore haskell stuff
 lang/hs/src
 *.hi
+solvents.cabal
+dist/
 
 # Ignore copied go src files
 src/
