@@ -6,4 +6,5 @@ set -o xtrace
 sudo apt-get install haskell-platform
 cabal update
 cp lang/hs/solvents.cabal .
+lang/hs/copy_source
 cabal install --only-dependencies --enable-tests
