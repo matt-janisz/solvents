@@ -4,7 +4,9 @@ set -e # Exit on error
 set -o xtrace
 
 lang/hs/copy_source
-ghc -ilang/hs/src \
-  lang/hs/src/Samples/FortyTwoTest.hs \
-  -o lang/hs/src/Samples/FortyTwoTest
-lang/hs/src/Samples/FortyTwoTest
+cp lang/hs/solvents.cabal .
+cabal configure --enable-tests && cabal build && cabal test
+#ghc -ilang/hs/src \
+#  lang/hs/src/Samples/FortyTwoTest.hs \
+#  -o lang/hs/src/Samples/FortyTwoTest
+#lang/hs/src/Samples/FortyTwoTest

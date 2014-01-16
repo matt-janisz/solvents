@@ -9,6 +9,7 @@ def main():
        root.startswith('./build') or \
        root.startswith('./lang') or \
        root.startswith('./third_party') or \
+       root.startswith('./dist') or \
        '__pycache__' in root or \
        root == '.':
       continue
@@ -31,6 +32,7 @@ def capitalize_dirs(dir):
     dirs.append(tail[0].upper() + tail[1:])
     if not head:
       break
+    dir = head
   return os.path.join(*dirs)
   
 if __name__ == '__main__':
