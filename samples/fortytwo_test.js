@@ -1,3 +1,5 @@
+'use strict'; // Required first line for all solvents *.js files
+
 const assert = require('assert');
 const fortytwo = require('./fortytwo');
 

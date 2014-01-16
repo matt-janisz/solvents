@@ -2,9 +2,9 @@
   "name": "solvents",
   "version": "0.1.0",
   "devDependencies": {
-    "mocha": "git://github.com/b0ri5/mocha.git#pass-use-strict-through"
+    "mocha": ">=1.17.0"
   },
   "scripts": {
-    "test": "cd ../.. && mocha --harmony --use_strict $(find . -name '*_test.js')"
+    "test": "cd ../.. && mocha --harmony $(find . -name '*_test.js')"
   }
 }
