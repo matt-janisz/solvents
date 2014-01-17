@@ -19,3 +19,15 @@ build.gradle
 __pycache__/
 *.py[cod]
 
+# Ignore haskell stuff
+lang/hs/src
+*.hi
+solvents.cabal
+dist/
+
+# Ignore copied go src files
+src/
+
+# Ignore node_modules for js
+node_modules/
+lang/js/node_modules/
