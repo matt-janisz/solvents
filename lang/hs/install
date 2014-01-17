@@ -8,4 +8,3 @@ cabal update
 cp lang/hs/solvents.cabal .
 lang/hs/copy_source
 cabal install --only-dependencies --enable-tests
-export PATH=~/.cabal/bin:${PATH}

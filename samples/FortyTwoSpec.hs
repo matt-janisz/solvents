@@ -11,4 +11,3 @@ spec = do
   describe "fortytwo" $ do
     it "should return 42" $ do
       fortytwo `shouldBe` 42
-
